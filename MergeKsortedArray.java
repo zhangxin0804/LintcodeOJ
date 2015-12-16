@@ -86,7 +86,7 @@ public class Solution {
 //                我们要想办法，每次把元素poll后要能够找到其所属的那个array的下一个index元素再添加入minHeap才行。因此，自建一个class
 //                分别存储元素值, 所述的array, 以及在所属的array中的index位置。这样方便后序元素拼成Node加入min heap.
 // 时间复杂度: O(NlogK)
-// 空间复杂度: O(N)
+// 空间复杂度: O(N), 因为创建了N个nodes, heap中的空间是O(k)
 
 class Node{
     int val;
